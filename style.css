@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(183, 224, 255);
+}
+
+
+.rps-image{
+  height: 200px;
+  display: inline-block;
+  cursor: pointer;
+}
+#rock-image {
+  height: 140px;
+}
+#paper-image, #scissors-image {
+  height: 200px;
+}
+
+
