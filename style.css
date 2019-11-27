@@ -11,8 +11,12 @@ body {
   padding: 50px;
   text-align: center;
 }
-
-
+.main-header {
+  padding-bottom: 1rem;
+}
+h2 {
+  padding: 1.5rem;
+}
 .rps-image{
   height: 100px;
   display: inline-block;
@@ -33,11 +37,11 @@ body {
 }
 #user-header {
   position: absolute;
-  top: 35%;
+  top: 43%;
   right: 37%;
 }
 #comp-header {
   position: absolute;
-  top: 35%;
-  right: 54%;
+  top: 43%;
+  right: 53%;
 }
