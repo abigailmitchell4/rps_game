@@ -35,13 +35,13 @@ h2 {
   display: inline-block;
   padding: 2rem;
 }
-#user-header {
-  position: absolute;
+/* #user-header {
+  position: relative;
   top: 43%;
   right: 37%;
 }
 #comp-header {
-  position: absolute;
+  position: relative;
   top: 43%;
   right: 53%;
-}
+} */
