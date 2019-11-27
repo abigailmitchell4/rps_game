@@ -2,6 +2,10 @@ var rockImage = "images/rock-small.png";
 var paperImage = "images/paper-small.png";
 var scissorsImage = "images/scissors-small.png";
 
+var rock = document.getElementById('rock');
+var paper = document.getElementById('paper');
+var scissors = document.getElementById('scissors');
+
 var showChoice = document.querySelectorAll(".show-choice");
 var choices = document.querySelectorAll(".rps-image");
 var image = document.querySelectorAll(".image");
@@ -22,6 +26,9 @@ function play(i) {
   var userChoice = i.target.id;
   var imgUserChoice = i.target.src;
   var compChoice = getCompChoice();
+  rock.style.visibility = 'hidden';
+  paper.style.visibility = 'hidden';
+  scissors.style.visibility = 'hidden';
   showCChoice(compChoice);
   showUChoice(imgUserChoice);
   var winner = determineWinner(userChoice, compChoice);
