@@ -1,6 +1,7 @@
 <html>
   <head>
       <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Oswald:500&display=swap" rel="stylesheet">
     <title>JS RPS</title>
   </head>
 
@@ -12,30 +13,38 @@
       <p>Computer: 0</p>
     </div>
 
-    <h2>Make Your Choice</h2>
+    <div class="show-options">
+      <h2>Make Your Choice</h2>
+        <div class="rps-image">
+          <img id="rock" src="images/rock-small.png"/>
+        </div>
+        <div class="rps-image" >
+            <img id="paper" src="images/paper-small.png"/>
+        </div>
+        <div class="rps-image">
+          <img id="scissors" src="images/scissors-small.png"/>
+        </div>
+    </div>
   
-    <div class="rps-image" >
-      <img id="rock" src="images/rock1.png"/>
-    </div>
-    <div class="rps-image" >
-        <img id="paper" src="images/paper1.png"/>
-    </div>
-    <div class="rps-image">
-      <img id="scissors" src="images/scissors1.png"/>
-    </div>
-    
 
-    <div class="show-choice">
-      <img id="user-choice" src=""/>
-      <img id="comp-choice" src=""/>
-    </div>
-    <div class="result">
-      <h4 id="result"></h4>
-    </div>
 
-    <div class="modal">
-      <div id="result" class="modal-content"></div>
-    </div>
+      <div class="display-choices">
+        <div class="show-choice">
+          <!-- <p>User Choice</p> -->
+          <p></p>
+          <img id="user-choice" src=""/>
+        </div>
+        <div class="show-choice">
+          <p></p>
+          <img id="comp-choice" src=""/>
+        </div>
+      </div>
+      
+  <div>
+    <h4 id="result"></h4>
+  </div>
+ 
+
 
     <script type="text/javascript" src="main.js"></script>
   </body>

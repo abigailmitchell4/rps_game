@@ -6,19 +6,26 @@
 
 body {
   background-color: rgb(183, 224, 255);
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  padding: 50px;
+  text-align: center;
 }
 
 
 .rps-image{
-  height: 200px;
+  height: 100px;
   display: inline-block;
   cursor: pointer;
-}
-#rock-image {
-  height: 140px;
-}
-#paper-image, #scissors-image {
-  height: 200px;
+  padding: 2rem;
 }
 
+#rock, #paper, #scissors {
+  width: 50px;
+}
+
+.show-choice {
+  display: inline-block;
+  padding: 2rem;
+}
 
