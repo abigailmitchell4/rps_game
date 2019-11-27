@@ -8,21 +8,17 @@ var image = document.querySelectorAll(".image");
 var score = document.getElementById('score');
 var result = document.getElementById('result');
 var modal = document.querySelector('.modal');
-// var showUser = document.getElementById('user-choice');
+var img = document.querySelectorAll('.img');
 var restart = document.getElementById('restart');
 var scoreboard = {
   player: 0,
   computer: 0
 };
-//TODO:
-//display user and comp choice, create place to display them
-//logic to see who won
-//display winner
-// Play game
+
 
 
 function play(i) {
-  restart.style.display = 'inline-block';
+ 
   var userChoice = i.target.id;
   var imgUserChoice = i.target.src;
   var compChoice = getCompChoice();
@@ -32,10 +28,6 @@ function play(i) {
   showWinner(winner);
 };
 
-// function hide() {
-//   i.style.display = "none";
-  
-// }
 
 function getCompChoice() {
   var randomNum = Math.floor(Math.random()*3);
@@ -51,13 +43,13 @@ function getCompChoice() {
 function showCChoice(i) {
   if (i === 'rock') {  
     document.getElementById("comp-choice").src = rockImage;
-    document.getElementById('comp-choice').previousElementSibling.innerHTML = "User Choice"
+    document.getElementById('comp-choice').previousElementSibling.innerHTML = "Computer Choice"
   } else if (i === 'paper') {
     document.getElementById("comp-choice").src = paperImage;
-    document.getElementById('comp-choice').previousElementSibling.innerHTML = "User Choice"
+    document.getElementById('comp-choice').previousElementSibling.innerHTML = "Computer Choice"
   } else {
     document.getElementById("comp-choice").src = scissorsImage;
-    document.getElementById('comp-choice').previousElementSibling.innerHTML = "User Choice"
+    document.getElementById('comp-choice').previousElementSibling.innerHTML = "Computer Choice"
   }
 };
 
@@ -111,6 +103,8 @@ function showWinner(winner) {
   // Restart game
 
 function restartGame() {
+  img.src = ""
+  debugger
   scoreboard.player = 0;
   scoreboard.computer = 0;
   score.innerHTML = `
